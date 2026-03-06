@@ -1,0 +1,56 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="680" fill="#F6F1E8"/>
+  <rect x="52" y="54" width="1096" height="572" rx="28" fill="#FFFDF8" stroke="#2D3A2E" stroke-width="3"/>
+  <text x="82" y="108" fill="#1D2A1E" font-family="Georgia, serif" font-size="34" font-weight="700">OpenFang ClawWork Flow</text>
+  <text x="82" y="142" fill="#48584B" font-family="Arial, sans-serif" font-size="18">From raw task inventory to real office deliverables</text>
+
+  <rect x="90" y="190" width="220" height="118" rx="22" fill="#DCE8D5" stroke="#2D3A2E" stroke-width="2.5"/>
+  <text x="114" y="228" fill="#1D2A1E" font-family="Arial, sans-serif" font-size="24" font-weight="700">1. ClawWork Tasks</text>
+  <text x="114" y="262" fill="#344636" font-family="Arial, sans-serif" font-size="17">220 office tasks</text>
+  <text x="114" y="287" fill="#344636" font-family="Arial, sans-serif" font-size="17">Value, sector, occupation, summary</text>
+
+  <rect x="356" y="190" width="228" height="118" rx="22" fill="#F2D9A6" stroke="#5E4C28" stroke-width="2.5"/>
+  <text x="380" y="228" fill="#382C16" font-family="Arial, sans-serif" font-size="24" font-weight="700">2. Screening Layer</text>
+  <text x="380" y="262" fill="#5E4C28" font-family="Arial, sans-serif" font-size="17">Fit score</text>
+  <text x="380" y="287" fill="#5E4C28" font-family="Arial, sans-serif" font-size="17">Commercial score + grouping</text>
+
+  <rect x="632" y="190" width="228" height="118" rx="22" fill="#D7E8F3" stroke="#29495B" stroke-width="2.5"/>
+  <text x="656" y="228" fill="#1E3543" font-family="Arial, sans-serif" font-size="24" font-weight="700">3. Agent Routing</text>
+  <text x="656" y="262" fill="#29495B" font-family="Arial, sans-serif" font-size="17">Analyst</text>
+  <text x="656" y="287" fill="#29495B" font-family="Arial, sans-serif" font-size="17">Researcher / Writer / Legal</text>
+
+  <rect x="908" y="190" width="202" height="118" rx="22" fill="#E6D8F0" stroke="#4F3561" stroke-width="2.5"/>
+  <text x="932" y="228" fill="#372345" font-family="Arial, sans-serif" font-size="24" font-weight="700">4. Workflow</text>
+  <text x="932" y="262" fill="#4F3561" font-family="Arial, sans-serif" font-size="17">Scope</text>
+  <text x="932" y="287" fill="#4F3561" font-family="Arial, sans-serif" font-size="17">Draft and polish</text>
+
+  <rect x="152" y="412" width="266" height="150" rx="24" fill="#FFF4D7" stroke="#8D6A15" stroke-width="2.5"/>
+  <text x="180" y="452" fill="#5B430A" font-family="Arial, sans-serif" font-size="24" font-weight="700">Output Assets</text>
+  <text x="180" y="487" fill="#735712" font-family="Arial, sans-serif" font-size="18">Top-60 batch</text>
+  <text x="180" y="515" fill="#735712" font-family="Arial, sans-serif" font-size="18">Top-3 pilot</text>
+  <text x="180" y="543" fill="#735712" font-family="Arial, sans-serif" font-size="18">Top-30 service directions</text>
+
+  <rect x="464" y="412" width="286" height="150" rx="24" fill="#D8EADC" stroke="#2E5A35" stroke-width="2.5"/>
+  <text x="492" y="452" fill="#1D3E24" font-family="Arial, sans-serif" font-size="24" font-weight="700">Example Deliverables</text>
+  <text x="492" y="487" fill="#2E5A35" font-family="Arial, sans-serif" font-size="18">Memo</text>
+  <text x="492" y="515" fill="#2E5A35" font-family="Arial, sans-serif" font-size="18">Spreadsheet / CSV</text>
+  <text x="492" y="543" fill="#2E5A35" font-family="Arial, sans-serif" font-size="18">Case-study folder</text>
+
+  <rect x="794" y="412" width="266" height="150" rx="24" fill="#F7D8D2" stroke="#7E3E36" stroke-width="2.5"/>
+  <text x="822" y="452" fill="#562822" font-family="Arial, sans-serif" font-size="24" font-weight="700">Business Goal</text>
+  <text x="822" y="487" fill="#7E3E36" font-family="Arial, sans-serif" font-size="18">Find tasks worth token spend</text>
+  <text x="822" y="515" fill="#7E3E36" font-family="Arial, sans-serif" font-size="18">Ship repeatable office work</text>
+  <text x="822" y="543" fill="#7E3E36" font-family="Arial, sans-serif" font-size="18">Turn agent output into service</text>
+
+  <path d="M310 249H356" stroke="#2D3A2E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M584 249H632" stroke="#5E4C28" stroke-width="4" stroke-linecap="round"/>
+  <path d="M860 249H908" stroke="#29495B" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M240 308V356C240 374 255 388 273 388H285" stroke="#2D3A2E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M470 308V356C470 374 585 388 607 388H607" stroke="#5E4C28" stroke-width="4" stroke-linecap="round"/>
+  <path d="M746 308V356C746 374 746 388 746 388H927" stroke="#29495B" stroke-width="4" stroke-linecap="round"/>
+
+  <circle cx="334" cy="249" r="6" fill="#2D3A2E"/>
+  <circle cx="608" cy="249" r="6" fill="#5E4C28"/>
+  <circle cx="884" cy="249" r="6" fill="#29495B"/>
+</svg>

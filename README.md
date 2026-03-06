@@ -21,6 +21,12 @@
 
 ---
 
+<p align="center">
+  <img src="assets/clawwork-openfang-flow.svg" width="920" alt="OpenFang ClawWork flow" />
+</p>
+
+---
+
 ## Recruiter Snapshot
 
 - Status: `active`
@@ -140,6 +146,9 @@
 - [reports/clawwork_openfang_fit_report.md](reports/clawwork_openfang_fit_report.md)
   面向人阅读的完整分析报告。
 
+- [examples/cleanup-memo-case](examples/cleanup-memo-case)
+  一个真实案例目录，包含任务 stub、memo 样例、可编辑 schedule CSV 和 workflow 输入文本。
+
 - [fixtures/sample_task_values.jsonl](fixtures/sample_task_values.jsonl)
   CI 和 smoke test 的小型 fixture。
 
@@ -186,6 +195,24 @@ curl -X POST http://127.0.0.1:4200/v1/chat/completions \
     ]
   }'
 ```
+
+---
+
+## 📁 真实案例
+
+如果你想让仓库更像“真的能拿去交付”的项目，而不是只有分析报告，可以直接看这个样例：
+
+- [examples/cleanup-memo-case/README.md](examples/cleanup-memo-case/README.md)
+- [examples/cleanup-memo-case/delivery/cleanup_memo.md](examples/cleanup-memo-case/delivery/cleanup_memo.md)
+- [examples/cleanup-memo-case/delivery/cleanup_schedule.csv](examples/cleanup-memo-case/delivery/cleanup_schedule.csv)
+
+这个案例选的是一个低歧义、强办公室场景的任务：
+
+- 写一份内部 memo
+- 给出一份可编辑 schedule
+- 适合作为 OpenFang workflow 的 first real deliverable
+
+它比“跑个 benchmark 截图”更接近真实服务交付。
 
 ---
 

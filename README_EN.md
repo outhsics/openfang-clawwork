@@ -21,6 +21,12 @@ English | [简体中文](README.md)
 
 ---
 
+<p align="center">
+  <img src="assets/clawwork-openfang-flow.svg" width="920" alt="OpenFang ClawWork flow" />
+</p>
+
+---
+
 ## Recruiter Snapshot
 
 - Status: `active`
@@ -125,6 +131,9 @@ Current scoring says these groups fit OpenFang best:
 - [reports/clawwork_openfang_fit_report.md](reports/clawwork_openfang_fit_report.md)
   Human-readable task-fit report.
 
+- [examples/cleanup-memo-case](examples/cleanup-memo-case)
+  A concrete case-study folder with a task stub, memo sample, editable CSV schedule, and workflow input text.
+
 - [fixtures/sample_task_values.jsonl](fixtures/sample_task_values.jsonl)
   Small fixture for CI and smoke tests.
 
@@ -171,6 +180,25 @@ curl -X POST http://127.0.0.1:4200/v1/chat/completions \
     ]
   }'
 ```
+
+---
+
+## 📁 Real case study
+
+If you want the repo to feel more like a real delivery system rather than only an analysis repo, start here:
+
+- [examples/cleanup-memo-case/README.md](examples/cleanup-memo-case/README.md)
+- [examples/cleanup-memo-case/delivery/cleanup_memo.md](examples/cleanup-memo-case/delivery/cleanup_memo.md)
+- [examples/cleanup-memo-case/delivery/cleanup_schedule.csv](examples/cleanup-memo-case/delivery/cleanup_schedule.csv)
+
+This case was chosen because it is:
+
+- low ambiguity
+- clearly office-facing
+- easy to route through OpenFang
+- close to an actual billable internal operations deliverable
+
+It is a better proof point than a benchmark screenshot.
 
 ---
 

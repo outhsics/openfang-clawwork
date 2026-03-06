@@ -1,0 +1,9 @@
+Draft a professional internal memo explaining a rotating cleanup schedule and produce an editable schedule table for staff and volunteers.
+
+Requirements:
+- tone: clear, respectful, operational
+- explain why the rotating schedule exists
+- explain what to do during disruptions
+- include escalation guidance
+- output should be usable by a government or administrative services team
+- include a lightweight editable schedule structure
