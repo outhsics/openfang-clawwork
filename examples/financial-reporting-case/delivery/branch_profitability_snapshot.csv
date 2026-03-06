@@ -1,0 +1,6 @@
+branch,region,revenue_usd,operating_expense_usd,ebitda_usd,operating_margin_pct,rank
+Branch Delta,West,1280000,652000,276480,21.6,1
+Branch Alpha,West,1145000,603000,229000,20.0,2
+Branch Beta,North,1560000,884000,249600,16.0,3
+Branch Epsilon,South,1090000,655000,152600,14.0,4
+Branch Gamma,East,980000,648000,88200,9.0,5

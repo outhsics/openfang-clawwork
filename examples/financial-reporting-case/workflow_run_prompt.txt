@@ -1,0 +1,9 @@
+Build a finance reporting package from a raw operational workbook.
+
+Requirements:
+- produce an executive summary suitable for management review
+- identify branch-level profitability differences
+- include regional comparisons
+- highlight ranking logic and outliers
+- outline what the final workbook tabs should contain
+- keep the structure suitable for repeat monthly reporting

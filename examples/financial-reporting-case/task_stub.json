@@ -1,0 +1,10 @@
+{
+  "task_id": "5f6c57dd-feb6-4e70-b152-4969d92d1608",
+  "occupation": "Financial Managers",
+  "sector": "Finance and Insurance",
+  "task_value_usd": 650.7,
+  "openfang_agent": "analyst",
+  "macro_group": "Spreadsheet and Financial Operations",
+  "fit_score": 100,
+  "task_summary": "Build a standardized Excel reporting package (5 tabs) from a provided raw-data workbook, including branch and aggregate dropdowns, income statement views, rankings, regional comparisons, and monthly and yearly operational and profitability metrics."
+}

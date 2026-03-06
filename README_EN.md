@@ -113,6 +113,9 @@ Current scoring says these groups fit OpenFang best:
 - [scripts/export_clawwork_openfang_assets.py](scripts/export_clawwork_openfang_assets.py)
   Generates all exported bridge assets from `task_values.jsonl`.
 
+- [scripts/backfill_openfang_result.py](scripts/backfill_openfang_result.py)
+  Writes OpenFang execution results back into a ClawWork-style `agent_data` tree.
+
 - [data/openfang_pilot_3.jsonl](data/openfang_pilot_3.jsonl)
   The first three tasks to pilot in OpenFang.
 
@@ -133,6 +136,9 @@ Current scoring says these groups fit OpenFang best:
 
 - [examples/cleanup-memo-case](examples/cleanup-memo-case)
   A concrete case-study folder with a task stub, memo sample, editable CSV schedule, and workflow input text.
+
+- [examples/financial-reporting-case](examples/financial-reporting-case)
+  A higher-value finance reporting case-study folder with a more commercial-looking output shape.
 
 - [fixtures/sample_task_values.jsonl](fixtures/sample_task_values.jsonl)
   Small fixture for CI and smoke tests.
@@ -202,6 +208,23 @@ It is a better proof point than a benchmark screenshot.
 
 ---
 
+## 📊 Higher-value finance case
+
+For a more serious business-facing example, start here:
+
+- [examples/financial-reporting-case/README.md](examples/financial-reporting-case/README.md)
+- [examples/financial-reporting-case/delivery/executive_summary.md](examples/financial-reporting-case/delivery/executive_summary.md)
+- [examples/financial-reporting-case/delivery/branch_profitability_snapshot.csv](examples/financial-reporting-case/delivery/branch_profitability_snapshot.csv)
+
+This case is useful for explaining business value because it looks much closer to:
+
+- monthly operating review work
+- executive reporting
+- standard finance packages
+- repeatable reporting services
+
+---
+
 ## 🔬 Current limitation
 
 This repo currently works from exposed ClawWork task value metadata:
@@ -226,6 +249,7 @@ But not enough for:
 - full prompt replay
 - reference file attachment
 - end-to-end task execution parity
+- lossless sync back into full GDPVal task context
 
 Because the full task source still lives in the GDPVal parquet dataset.
 
@@ -249,6 +273,26 @@ Run the local smoke test:
 
 ```bash
 python3 tests/smoke_test.py
+python3 tests/backfill_smoke_test.py
+```
+
+Backfill one OpenFang run into a ClawWork-style folder:
+
+```bash
+python3 scripts/backfill_openfang_result.py \
+  --agent-data-root ./tmp/agent_data \
+  --signature openfang-pilot-agent \
+  --task-id pilot-001 \
+  --date 2026-03-06 \
+  --occupation "Administrative Services Managers" \
+  --sector Government \
+  --prompt "Draft a cleanup memo and editable schedule." \
+  --payment 18.5 \
+  --evaluation-score 0.84 \
+  --feedback "Structured and practical." \
+  --token-cost 2.75 \
+  --wall-clock-seconds 1800 \
+  --artifact examples/cleanup-memo-case/delivery/cleanup_schedule.csv
 ```
 
 ---

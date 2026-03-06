@@ -128,6 +128,9 @@
 - [scripts/export_clawwork_openfang_assets.py](scripts/export_clawwork_openfang_assets.py)
   从 `task_values.jsonl` 生成所有桥接资产。
 
+- [scripts/backfill_openfang_result.py](scripts/backfill_openfang_result.py)
+  把 OpenFang 运行结果回填成 ClawWork 风格的 `agent_data` 日志结构。
+
 - [data/openfang_pilot_3.jsonl](data/openfang_pilot_3.jsonl)
   最适合先试跑的 3 个任务。
 
@@ -148,6 +151,9 @@
 
 - [examples/cleanup-memo-case](examples/cleanup-memo-case)
   一个真实案例目录，包含任务 stub、memo 样例、可编辑 schedule CSV 和 workflow 输入文本。
+
+- [examples/financial-reporting-case](examples/financial-reporting-case)
+  一个更高价值的财务报表案例目录，展示更像真实商业交付的输出结构。
 
 - [fixtures/sample_task_values.jsonl](fixtures/sample_task_values.jsonl)
   CI 和 smoke test 的小型 fixture。
@@ -216,6 +222,23 @@ curl -X POST http://127.0.0.1:4200/v1/chat/completions \
 
 ---
 
+## 📊 更高价值的财务案例
+
+如果你想看更像企业内部 finance / ops 服务的样例，可以直接看：
+
+- [examples/financial-reporting-case/README.md](examples/financial-reporting-case/README.md)
+- [examples/financial-reporting-case/delivery/executive_summary.md](examples/financial-reporting-case/delivery/executive_summary.md)
+- [examples/financial-reporting-case/delivery/branch_profitability_snapshot.csv](examples/financial-reporting-case/delivery/branch_profitability_snapshot.csv)
+
+这个案例更适合对外讲“为什么 AI 代理有商业价值”，因为它更接近：
+
+- 月度经营分析
+- 管理层汇报
+- 标准化财务包
+- 可重复刷新型服务
+
+---
+
 ## 🔬 当前限制
 
 当前仓库是基于 ClawWork 暴露出来的任务价值元数据工作的，已知字段包括：
@@ -239,6 +262,7 @@ curl -X POST http://127.0.0.1:4200/v1/chat/completions \
 - 全量可执行 prompt
 - reference files 自动挂载
 - 100% 原始任务重放
+- 自动把 OpenFang 结果无损同步回完整 GDPVal 上下文
 
 因为真正完整的任务输入仍然在 GDPVal parquet 数据源里。
 
@@ -262,6 +286,26 @@ python3 scripts/export_clawwork_openfang_assets.py \
 
 ```bash
 python3 tests/smoke_test.py
+python3 tests/backfill_smoke_test.py
+```
+
+把一次 OpenFang 运行结果回填成 ClawWork 风格目录：
+
+```bash
+python3 scripts/backfill_openfang_result.py \
+  --agent-data-root ./tmp/agent_data \
+  --signature openfang-pilot-agent \
+  --task-id pilot-001 \
+  --date 2026-03-06 \
+  --occupation "Administrative Services Managers" \
+  --sector Government \
+  --prompt "Draft a cleanup memo and editable schedule." \
+  --payment 18.5 \
+  --evaluation-score 0.84 \
+  --feedback "Structured and practical." \
+  --token-cost 2.75 \
+  --wall-clock-seconds 1800 \
+  --artifact examples/cleanup-memo-case/delivery/cleanup_schedule.csv
 ```
 
 ---
