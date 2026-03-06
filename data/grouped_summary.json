@@ -1,0 +1,270 @@
+[
+  {
+    "group": "Research, Policy and Briefing",
+    "count": 17,
+    "avg_fit": 87.8,
+    "avg_value": 283.99,
+    "most_common_agents": [
+      [
+        "researcher",
+        9
+      ],
+      [
+        "analyst",
+        4
+      ],
+      [
+        "writer",
+        4
+      ]
+    ],
+    "top_occupations": [
+      [
+        "News Analysts, Reporters, and Journalists",
+        3
+      ],
+      [
+        "Administrative Services Managers",
+        2
+      ],
+      [
+        "Personal Financial Advisors",
+        2
+      ]
+    ]
+  },
+  {
+    "group": "Spreadsheet and Financial Operations",
+    "count": 67,
+    "avg_fit": 85.3,
+    "avg_value": 255.75,
+    "most_common_agents": [
+      [
+        "analyst",
+        63
+      ],
+      [
+        "legal-assistant",
+        4
+      ]
+    ],
+    "top_occupations": [
+      [
+        "First-Line Supervisors of Production and Operating Workers",
+        5
+      ],
+      [
+        "Financial Managers",
+        4
+      ],
+      [
+        "Medical Secretaries and Administrative Assistants",
+        4
+      ]
+    ]
+  },
+  {
+    "group": "Procurement, Sales and Vendor Strategy",
+    "count": 19,
+    "avg_fit": 78.2,
+    "avg_value": 221.92,
+    "most_common_agents": [
+      [
+        "analyst",
+        12
+      ],
+      [
+        "sales-assistant",
+        5
+      ],
+      [
+        "writer",
+        1
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Buyers and Purchasing Agents",
+        5
+      ],
+      [
+        "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+        3
+      ],
+      [
+        "First-Line Supervisors of Non-Retail Sales Workers",
+        2
+      ]
+    ]
+  },
+  {
+    "group": "Legal, Compliance and Case Documentation",
+    "count": 15,
+    "avg_fit": 75.6,
+    "avg_value": 207.24,
+    "most_common_agents": [
+      [
+        "legal-assistant",
+        11
+      ],
+      [
+        "analyst",
+        2
+      ],
+      [
+        "researcher",
+        1
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Lawyers",
+        5
+      ],
+      [
+        "Accountants and Auditors",
+        2
+      ],
+      [
+        "Compliance Officers",
+        2
+      ]
+    ]
+  },
+  {
+    "group": "Administrative, Customer and Form Work",
+    "count": 37,
+    "avg_fit": 74.5,
+    "avg_value": 257.49,
+    "most_common_agents": [
+      [
+        "writer",
+        16
+      ],
+      [
+        "customer-support",
+        13
+      ],
+      [
+        "legal-assistant",
+        3
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Editors",
+        3
+      ],
+      [
+        "Computer and Information Systems Managers",
+        3
+      ],
+      [
+        "First-Line Supervisors of Police and Detectives",
+        3
+      ]
+    ]
+  },
+  {
+    "group": "Technical and General Business Planning",
+    "count": 42,
+    "avg_fit": 68.4,
+    "avg_value": 207.08,
+    "most_common_agents": [
+      [
+        "writer",
+        17
+      ],
+      [
+        "researcher",
+        9
+      ],
+      [
+        "sales-assistant",
+        7
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Real Estate Sales Agents",
+        4
+      ],
+      [
+        "Film and Video Editors",
+        3
+      ],
+      [
+        "Mechanical Engineers",
+        3
+      ]
+    ]
+  },
+  {
+    "group": "Decks, Training and Communications",
+    "count": 10,
+    "avg_fit": 68.3,
+    "avg_value": 240.9,
+    "most_common_agents": [
+      [
+        "writer",
+        5
+      ],
+      [
+        "analyst",
+        2
+      ],
+      [
+        "researcher",
+        2
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Financial and Investment Analysts",
+        1
+      ],
+      [
+        "First-Line Supervisors of Retail Sales Workers",
+        1
+      ],
+      [
+        "Personal Financial Advisors",
+        1
+      ]
+    ]
+  },
+  {
+    "group": "Creative Media Production",
+    "count": 13,
+    "avg_fit": 27.5,
+    "avg_value": 550.55,
+    "most_common_agents": [
+      [
+        "researcher",
+        5
+      ],
+      [
+        "analyst",
+        4
+      ],
+      [
+        "writer",
+        3
+      ]
+    ],
+    "top_occupations": [
+      [
+        "Audio and Video Technicians",
+        5
+      ],
+      [
+        "Producers and Directors",
+        3
+      ],
+      [
+        "First-Line Supervisors of Non-Retail Sales Workers",
+        1
+      ]
+    ]
+  }
+]

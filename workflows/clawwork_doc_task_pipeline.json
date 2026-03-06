@@ -1,0 +1,32 @@
+{
+  "name": "clawwork-doc-task-pipeline",
+  "description": "Run a ClawWork document-style task stub through OpenFang researcher -> analyst -> writer.",
+  "steps": [
+    {
+      "name": "scope-task",
+      "agent_name": "researcher",
+      "prompt": "Break this task into assumptions, missing inputs, and recommended sources. Task: {{input}}",
+      "mode": "sequential",
+      "timeout_secs": 120,
+      "error_mode": "fail",
+      "output_var": "scope"
+    },
+    {
+      "name": "draft-artifact",
+      "agent_name": "analyst",
+      "prompt": "Create the first-pass business artifact for this task. Use the scope notes first, then the task. Scope: {{scope}}. Task: {{input}}",
+      "mode": "sequential",
+      "timeout_secs": 180,
+      "error_mode": "fail",
+      "output_var": "draft"
+    },
+    {
+      "name": "polish-delivery",
+      "agent_name": "writer",
+      "prompt": "Turn this draft into a client-ready deliverable summary with clear sections, assumptions, and next required files. Draft: {{draft}}",
+      "mode": "sequential",
+      "timeout_secs": 120,
+      "error_mode": "fail"
+    }
+  ]
+}
